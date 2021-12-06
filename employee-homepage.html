@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Homepage</title>
+    <link rel="stylesheet" href="employee-homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <div id="reimticket-image-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <div id="employee-homepage-grid-container">
+        <nav>
+            <h1>Welcome to the Employee homepage</h1>
+            <button id="logout">Logout</button>
+        </nav>
+
+        <div id="reimtickets">
+            <h2>Reimtickets</h2>
+            <table id="reimticket-table">
+                <thead>
+                    <tr>
+                        <th>&nbsp;&nbsp;id&nbsp;&nbsp;</th>
+                        <th>&nbsp;&nbsp;Reimticket Type&nbsp;&nbsp;</th>
+                        <th>&nbsp;&nbsp;Reimbursement&nbsp;&nbsp;</th>
+                        <th>&nbsp;&nbsp;Finance Manager ID&nbsp;&nbsp;</th>
+                        <th>&nbsp;&nbsp;Employee ID&nbsp;&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="reimticket-submit-form">
+            <h2>Submit New Reimticket</h2>
+
+            <div>
+                <label for="reimticket-type">Reimticket Type:</label>
+                <input type="text" id="reimticket-type" />
+            </div>
+            
+            <div>
+                <label for="reimticket-file">Reimticket Upload (JPEG, PNG, or GIF)</label>
+                <input type="file" id="reimticket-file" />
+            </div>
+            
+            <div>
+                <button id="submit-reimticket-btn">Submit Reimticket</button>
+            </div>
+        </div>
+    </div>
+    <script src="employee-homepage.js"></script>
+</body>
+</html>
